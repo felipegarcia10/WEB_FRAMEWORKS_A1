@@ -10,7 +10,7 @@
             </thead>
             <tbody>
                 <tr v-for="(item, index) in leaderboardData" :key="index">
-                    <td>{{item.player}}</td>
+                    <td>{{item.player_name}}</td>
                     <td>{{item.score}}</td>
                 </tr>
             </tbody>
@@ -22,7 +22,7 @@
     import { onMounted, ref } from "vue";
 
     type LeaderBoardItem = {
-        player: string;
+        player_name: string;
         score: number;
     }
 

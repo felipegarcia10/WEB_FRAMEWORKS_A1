@@ -10,7 +10,7 @@
             </thead>
             <tbody>
                 <tr v-for="(item, index) in leaderboardData" :key="index">
-                    <td>{{item.player}}</td>
+                    <td>{{item.player_name}}</td>
                     <td>{{item.score}}</td>
                 </tr>
             </tbody>
@@ -29,7 +29,11 @@
     const leaderboardData = ref<LeaderboardItem[]>([]);
     const errorMessage = ref("");
 
-    const url = "http://localhost:3000/api/leaderboard-summary";
+    //without proxy
+    //const url = "http://localhost:3000/api/leaderboard-summary";
+
+    //with proxy
+    const url = "/api/leaderboard-summary";
 
     async function fetchLeaderboardData() {
         try {
