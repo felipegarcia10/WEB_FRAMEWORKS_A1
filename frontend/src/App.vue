@@ -7,7 +7,7 @@
 
 <template>
   <div id="app">
-      <header>
+      <!--<header>
           <nav>
               <ul>
                   <li>
@@ -26,7 +26,7 @@
 
               </ul>
           </nav>
-      </header>
+      </header>-->
       <main>
           <router-view/>
       </main>
