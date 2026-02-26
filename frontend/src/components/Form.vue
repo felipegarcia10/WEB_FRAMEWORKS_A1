@@ -9,7 +9,7 @@
             <textarea id="comment-input"></textarea><br />
             <label>Accept terms and conditions</label>
             <input type="radio"/><br />
-            <input id="submit-btn" type="submit" />
+            <input id="submit-btn" type="button" value="submit"/>
         </form>
     </div>
 </template>

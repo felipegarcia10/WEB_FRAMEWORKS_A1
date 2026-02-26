@@ -72,16 +72,6 @@ app.get("/api/ping", (req: Request, res: Response) => {
     res.json({ message: "OK" });
 });
 
-app.get("/api/leaderboard-summary", (req: Request, res: Response) => {
-    const summaryData: LeaderBoardItem[] = [
-        { player_name: "Spencer", score: 9999 },
-        { player_name: "Raf", score: -9999 },
-        { player_name: "Yeison", score: -2 },
-        { player_name: "Pedro", score: 0 },
-    ];
-
-    res.json(summaryData);
-});
 
 app.get("/api/leaderboard", async (req: Request, res: Response) => {
 
@@ -90,14 +80,14 @@ app.get("/api/leaderboard", async (req: Request, res: Response) => {
     res.json(leaderboardData);
 });
 
-app.get("/api/stats", (req: Request, res: Response) => {
-    const statsData: StatsItem[] = [
-        {stat:"Current players", value: "7,890,569"},
-        {stat:"Matches played", value: "158,904,132"},
-        {stat:"Revenue", value: "0"},
-    ];
-    res.json(statsData);
-});
+//app.get("/api/stats", (req: Request, res: Response) => {
+//    const statsData: StatsItem[] = [
+//        {stat:"Current players", value: "7,890,569"},
+//        {stat:"Matches played", value: "158,904,132"},
+//        {stat:"Revenue", value: "0"},
+//    ];
+//    res.json(statsData);
+//});
 
 app.listen(PORT, () => {
     console.log(`Backend server is running at http://localhost: ${PORT}`);

@@ -7,7 +7,7 @@
         <p>If you are not here, you suck</p>
 
         <Leaderboard />
-        <Stats />
+
         <Footer />
 
     </div>

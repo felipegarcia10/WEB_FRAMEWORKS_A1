@@ -23,6 +23,8 @@
 
 </script>
 <style scoped>
-
+    ul li {
+        text-align: left;
+    }
 
 </style>

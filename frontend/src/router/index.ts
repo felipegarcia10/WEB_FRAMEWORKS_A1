@@ -6,7 +6,7 @@ import FeedbackPage from "../views/FeedbackPage.vue";
 import LoginPage from "../views/LoginPage.vue";
 
 const routes: RouteRecordRaw[] = [
-    { path: "/Login", name: "Login", component: LoginPage },
+    { path: "/", name: "Login", component: LoginPage },
     { path: "/Home", name: "Landing", component: LandingPage },
     { path: "/About", name: "About", component: AboutPage },
     { path: "/Leaderboard", name: "Leaderboard", component: LeaderboardPage },
